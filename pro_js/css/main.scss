@@ -5,6 +5,7 @@ $yellow: #F8CA4D;
 $light: #F5E5C0;
 $lightblue: #3F5666;
 $darkblue: #2F3440;
+$white: #ffffff;
 
 // Border-radius
 $vert: top;
@@ -14,16 +15,24 @@ $radius: 2px;
 // Margin
 $m-auto: 0 auto;
 
-// Width
-$w-2: 200px;
-$w-4: 400px;
-$w-6: 600px;
-$w-8: 800px;
+// Width/Height
+$wh-2: 200px;
+$wh-4: 400px;
+$wh-6: 600px;
+$wh-8: 800px;
 
+// Padding/Margin
+$pm-2: 2px;
+$pm-4: 4px;
+$pm-6: 6px;
+$pm-8: 8px;
 
 body {
     background: $lightblue;
 
+    a {
+        text-decoration: none;
+    }
     .wrapper {
         width: 600px;
         margin: $m-auto;
@@ -32,7 +41,7 @@ body {
         .group-title {
             color: $orange;
             background: $darkblue;
-            width: $w-2;
+            width: $wh-2;
             padding: 10px;
             margin-bottom: 10px;
             border-radius: $radius * 4;
@@ -42,7 +51,7 @@ body {
             color: $yellow;
             padding: 10px;
             background: $darkblue;
-            width: $w-2;
+            width: $wh-2;
             border-radius: $radius * 2;
 
             label {
@@ -51,8 +60,24 @@ body {
             }
 
             input {
-                width: $w-2 / 2;
+                width: $wh-2 / 2;
             }
         }
     }
+}
+
+.button {
+    display: block;
+    color: $darkblue;
+    background: $light;
+    padding: $pm-2 * 3;
+    width: $wh-2 / 2;
+    border-radius: $radius * 4;
+    text-align: center;
+    margin-top: $pm-2 * 10;
+}
+
+.button-hover {
+    background: $white;
+    color: $darkblue;
 }
