@@ -23,7 +23,13 @@ body {
         display: inline-block;
         width: 70px; }
       body .wrapper .group-content input {
-        width: 100px; }
+        width: 119px; }
+      body .wrapper .group-content .subtotal {
+        display: block;
+        text-align: right;
+        font-size: 16px;
+        color: white;
+        padding-top: 10px; }
 
 .btn {
   display: block;
@@ -38,3 +44,6 @@ body {
 .btn-hover {
   background: white;
   color: #2f3440; }
+
+.latent {
+  display: none; }

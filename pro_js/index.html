@@ -12,21 +12,30 @@
                 <div class="group-content">
                     <label for="apple" class="computer-name">Apple</label>
                     <input name="apple" value="0"/>
+                    <span class="subtotal latent">($<span>0</span>)</span>
                 </div>
                 <div class="group-content">
                     <label for="lenovo" class="computer-name">Lenovo</label>
                     <input name="lenovo" value="0"/>
+                    <span class="subtotal latent">($<span>0</span>)</span>
                 </div>
                 <div class="group-content">
                     <label for="dell" class="computer-name">Dell</label>
                     <input name="dell" value="0"/>
+                    <span class="subtotal latent">($<span>0</span>)</span>
                 </div>
+            </div>
+            <div class="sumline latent"></div>
+            <div class="group-content latent">
+                <label class="computer-name">Total:</label>
+                <input type="text" class="placeholder" name="spacer" value="0">
+                <span class="subtotal latent" id="total">$0</span>
             </div>
             <div id="buttonDiv">
                 <input type="submit" />
             </div>
         </form>
-    </div>
+    </div><!-- wrapper -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
     <script src="js/main.js"></script>
 </body>
