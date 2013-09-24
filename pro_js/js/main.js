@@ -34,6 +34,18 @@
             var subtotal = $(this).val() * priceData[this.name];
 
             $(this).siblings('span').children('span').text(subtotal);
+
+            calculateTotal();
         });
+
+        function calculateTotal() {
+            var total = 0;
+
+            $('span.subtotal span').not("#total").each(function(index, elem){
+                total += Number($(elem).text());
+            });
+
+            $("#total").text("$" + total);
+        }
     });
 })(jQuery);
