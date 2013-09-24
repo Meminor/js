@@ -1,0 +1,58 @@
+// Colors
+
+$orange: #EA6045;
+$yellow: #F8CA4D;
+$light: #F5E5C0;
+$lightblue: #3F5666;
+$darkblue: #2F3440;
+
+// Border-radius
+$vert: top;
+$horz: left;
+$radius: 2px;
+
+// Margin
+$m-auto: 0 auto;
+
+// Width
+$w-2: 200px;
+$w-4: 400px;
+$w-6: 600px;
+$w-8: 800px;
+
+
+body {
+    background: $lightblue;
+
+    .wrapper {
+        width: 600px;
+        margin: $m-auto;
+        font-size: 20px;
+
+        .group-title {
+            color: $orange;
+            background: $darkblue;
+            width: $w-2;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: $radius * 4;
+        }
+
+        .group-content {
+            color: $yellow;
+            padding: 10px;
+            background: $darkblue;
+            width: $w-2;
+            border-radius: $radius * 2;
+
+            label {
+                display: inline-block;
+                width: 70px;
+            }
+
+            input {
+                width: $w-2 / 2;
+            }
+        }
+    }
+}
