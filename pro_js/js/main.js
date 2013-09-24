@@ -6,15 +6,19 @@
 
         $("<a href=#>Order</a>").
             appendTo($btnD).
-            addClass('button').
+            addClass('btn').
             click(function(){
                 $('form').submit();
             }).
             hover(
-                function(){
-                    $btnD.find("a").addClass('button-hover');
-                }, function(){
-                    $btnD.find("a").removeClass('button-hover');
+                function(e){
+                    var elem = $btnD.find("a");
+
+                    if (e.type === "mouseenter") {
+                        elem.addClass('btn-hover');
+                    } else {
+                        elem.removeClass("btn-hover");
+                    }
             });
     });
 })(jQuery);

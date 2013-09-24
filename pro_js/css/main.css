@@ -25,7 +25,7 @@ body {
       body .wrapper .group-content input {
         width: 100px; }
 
-.button {
+.btn {
   display: block;
   color: #2f3440;
   background: #f5e5c0;
@@ -35,6 +35,6 @@ body {
   text-align: center;
   margin-top: 20px; }
 
-.button-hover {
+.btn-hover {
   background: white;
   color: #2f3440; }
