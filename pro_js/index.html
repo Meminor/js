@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CheeseLux</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="/basket" method="post">
+            <div class="group">
+                <div class="group-title">Computers</div>
+                <div class="group-content">
+                    <label for="apple" class="computer-name">Apple</label>
+                    <input name="apple" value="0"/>
+                </div>
+                <div class="group-content">
+                    <label for="lenovo" class="computer-name">Lenovo</label>
+                    <input name="lenovo" value="0"/>
+                </div>
+                <div class="group-content">
+                    <label for="dell" class="computer-name">Dell</label>
+                    <input name="dell" value="0"/>
+                </div>
+            </div>
+            <div id="buttonDiv">
+                <input type="submit" />
+            </div>
+        </form>
+    </div>
+</body>
+</html>

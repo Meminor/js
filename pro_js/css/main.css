@@ -1,0 +1,24 @@
+body {
+  background: #3f5666; }
+  body .wrapper {
+    width: 600px;
+    margin: 0 auto;
+    font-size: 20px; }
+    body .wrapper .group-title {
+      color: #ea6045;
+      background: #2f3440;
+      width: 200px;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px; }
+    body .wrapper .group-content {
+      color: #f8ca4d;
+      padding: 10px;
+      background: #2f3440;
+      width: 200px;
+      border-radius: 4px; }
+      body .wrapper .group-content label {
+        display: inline-block;
+        width: 70px; }
+      body .wrapper .group-content input {
+        width: 100px; }
