@@ -7,14 +7,16 @@
 <body>
     <div class="wrapper">
         <form action="/shipping" method="post"> 
-            <div class="group-title" data-bind="text: category"></div>
-            <div data-bind="foreach: items">
-                <div class="group-content">
-                    <label data-bind="attr: {for: id}" class="pc-name">
-                        <span data-bind="text: name"></span>
-                        $(<span data-bind="text: price"></span>)
-                    </label>
-                    <input data-bind="attr: {name: id}" value="0">
+            <div data-bind="foreach: products">
+                <div class="group-title" data-bind="text: category"></div>
+                <div data-bind="foreach: items">
+                    <div class="group-content">
+                        <label data-bind="attr: {for: id}" class="pc-name">
+                            <span data-bind="text: name"></span>
+                            $(<span data-bind="text: price"></span>)
+                        </label>
+                        <input data-bind="attr: {name: id}" value="0">
+                    </div>
                 </div>
             </div>
             <div id="btn-div">
