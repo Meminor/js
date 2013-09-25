@@ -1,5 +1,7 @@
 body {
   background: #3f5666; }
+  body a {
+    text-decoration: none; }
   body .wrapper {
     width: 600px;
     margin: 0 auto;
@@ -21,4 +23,24 @@ body {
         display: inline-block;
         width: 70px; }
       body .wrapper .group-content input {
-        width: 100px; }
+        width: 119px; }
+      body .wrapper .group-content .subtotal {
+        display: block;
+        text-align: right;
+        font-size: 14px; }
+
+.btn {
+  padding: 4px;
+  background: #f5e5c0;
+  color: #2f3440;
+  border-radius: 4px;
+  margin-top: 10px;
+  display: block;
+  width: 66.66667px;
+  text-align: center; }
+
+.btn-hover {
+  background: #ea6045; }
+
+.latent {
+  display: none; }

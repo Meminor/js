@@ -11,28 +11,36 @@ $vert: top;
 $horz: left;
 $radius: 2px;
 
-// Margin
-$m-auto: 0 auto;
+// Margin/Padding
+$pm-auto: 0 auto;
+$pm-2: 2px;
+$pm-4: 4px;
+$pm-6: 6px;
+$pm-8: 8px;
 
-// Width
-$w-2: 200px;
-$w-4: 400px;
-$w-6: 600px;
-$w-8: 800px;
+// Width/Height
+$wh-2: 200px;
+$wh-4: 400px;
+$wh-6: 600px;
+$wh-8: 800px;
 
 
 body {
     background: $lightblue;
 
+    a {
+        text-decoration: none;
+    }
+
     .wrapper {
         width: 600px;
-        margin: $m-auto;
+        margin: $pm-auto;
         font-size: 20px;
 
         .group-title {
             color: $orange;
             background: $darkblue;
-            width: $w-2;
+            width: $wh-2;
             padding: 10px;
             margin-bottom: 10px;
             border-radius: $radius * 4;
@@ -42,7 +50,7 @@ body {
             color: $yellow;
             padding: 10px;
             background: $darkblue;
-            width: $w-2;
+            width: $wh-2;
             border-radius: $radius * 2;
 
             label {
@@ -51,8 +59,33 @@ body {
             }
 
             input {
-                width: $w-2 / 2;
+                width: $wh-2 / 2 + 19;
+            }
+
+            .subtotal {
+                display: block;
+                text-align: right;
+                font-size: 14px;
             }
         }
     }
+}
+
+.btn {
+    padding: $pm-4;
+    background: $light;
+    color: $darkblue;
+    border-radius: $radius * 2;
+    margin-top: $pm-2 * 5;
+    display: block;
+    width: $wh-2/3;
+    text-align: center;
+}
+
+.btn-hover {
+    background: $orange;
+}
+
+.latent {
+    display: none;
 }
