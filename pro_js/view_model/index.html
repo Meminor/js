@@ -6,7 +6,10 @@
 </head>
 <body>
     <div class="wrapper">
-        <form action="/shipping" method="post"> 
+        <form action="/shipping" method="post">
+            <div id="btn-discount">
+                <input id="discount" type="button" value="Discount">
+            </div>
             <div data-bind="foreach: products">
                 <div class="group-title" data-bind="text: category"></div>
                 <div data-bind="foreach: items">

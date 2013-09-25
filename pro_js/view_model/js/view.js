@@ -45,5 +45,24 @@
         ]
     };
 
-        ko.applyBindings(pcModel);
+    function mapProducts(func) {
+        $.each(pcModel.products, function(catIndex, outerItem){
+            $.each(outerItem.items, function(itemIndex, innerItem){
+                func(innerItem);
+            });
+        });
+    }
+
+    mapProducts(function(item){
+        item.price = ko.observable(item.price);
+    });
+
+    ko.applyBindings(pcModel);
+
+    $('#btn-discount').click(function(){
+        mapProducts(function(item){
+            item.price(item.price() - 200);
+        });
+    });
+
 })(jQuery);
