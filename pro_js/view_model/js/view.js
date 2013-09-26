@@ -25,7 +25,7 @@
                 category: "Laptop",
                 items: [
                     {
-                        id: "sony",
+                        id: "sony",t
                         name: "Sony",
                         price: 1299
                     },
@@ -40,8 +40,7 @@
                         price: 1100
                     }
                 ]
-            },
-
+            }
         ]
     };
 
