@@ -1,3 +1,5 @@
+// START from p. 63
+
 (function($){
     var pcModel = {
         products: [
@@ -45,6 +47,13 @@
         ]
     };
 
+    pcModel.specials = {
+        category: "Special Offers",
+        discount: 200,
+        ids: ["lenovo", "dell"],
+        items: []
+    };
+
     function mapProducts(func) {
         $.each(pcModel.products, function(catIndex, outerItem){
             $.each(outerItem.items, function(itemIndex, innerItem){
@@ -54,7 +63,12 @@
     }
 
     mapProducts(function(item){
+        if ($.inArray(item.id, pcModel.specials.ids) > -1) {
+            item.price -= pcModel.specials.discount;
+            pcModel.specials.items.push(item);
+        }
         item.price = ko.observable(item.price);
+        item.quantity = ko.observable(0);
     });
 
     ko.applyBindings(pcModel);
