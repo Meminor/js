@@ -1,6 +1,7 @@
 div {
 	min-height: 400px;
 	cursor: pointer;
+	-webkit-user-select:none;
 }
 div p {
 	width: 800px;
