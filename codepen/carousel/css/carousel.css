@@ -1,0 +1,11 @@
+.carousel {
+  margin: 20% auto 0; }
+  .carousel .left, .carousel .right {
+    width: 20px;
+    height: 50px;
+    background: #2f3440;
+    cursor: pointer; }
+  .carousel .content ul {
+    list-style: none; }
+    .carousel .content ul li {
+      float: left; }
