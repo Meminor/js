@@ -1,0 +1,23 @@
+div {
+	min-height: 400px;
+	cursor: pointer;
+}
+div p {
+	width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.top {
+	background: #EA6045;
+	color: #F5E5C0;
+}
+
+.mid {
+	background: #F8CA4D;
+}
+
+.bottom {
+	background: #2F3440;
+	color: #F5E5C0;
+}
