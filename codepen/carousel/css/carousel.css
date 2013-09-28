@@ -1,6 +1,6 @@
 .carousel {
   margin: 20% auto 0; }
-  .carousel .left, .carousel .right {
+  .carousel .btn {
     width: 20px;
     height: 50px;
     background: #2f3440;
