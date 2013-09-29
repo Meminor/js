@@ -27,7 +27,10 @@
                 }
             toLeft();
             } else {
-                if )
+                if(currentImg === imgs.length - 1) {
+                    currentImg =- 1;
+                }
+                toRight();
             }
 
         }, false);

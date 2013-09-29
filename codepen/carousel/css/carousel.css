@@ -1,11 +1,30 @@
 .carousel {
-  margin: 20% auto 0; }
-  .carousel .btn {
-    width: 20px;
-    height: 50px;
-    background: #2f3440;
-    cursor: pointer; }
+  width: 680px;
+  margin: 10% auto 0;
+  position: relative; }
   .carousel .content ul {
     list-style: none; }
     .carousel .content ul li {
       float: left; }
+  .carousel .btn {
+    position: absolute;
+    top: 100px;
+    cursor: pointer; }
+    .carousel .btn#left {
+      left: 0;
+      border-top: 60px solid transparent;
+      border-bottom: 60px solid transparent;
+      border-right: 20px solid #2f3440; }
+      .carousel .btn#left:hover {
+        border-top: 60px solid transparent;
+        border-bottom: 60px solid transparent;
+        border-right: 20px solid #ea6045; }
+    .carousel .btn#right {
+      right: 0;
+      border-top: 60px solid transparent;
+      border-bottom: 60px solid transparent;
+      border-left: 20px solid #2f3440; }
+      .carousel .btn#right:hover {
+        border-top: 60px solid transparent;
+        border-bottom: 60px solid transparent;
+        border-left: 20px solid #ea6045; }
