@@ -1,9 +1,7 @@
 (function(){
     var imgs = document.querySelectorAll('.content ul li img'),
         btn = document.getElementsByAttribute('data-role'),
-        currentImg = 0,
-        btnObj = {};
-
+        currentImg = 0;
 
     function initCar() {
         resetCar();
