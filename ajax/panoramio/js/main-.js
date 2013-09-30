@@ -1,13 +1,14 @@
 (function($){
     $(function(){
-        var tmpImg = $('#image');
+        var tmpImg = $('#tpl-img'),
+            searchBox = $('#search-box');
 
         function setTmp(tmp, sKey, sValue) {
-            return tmp.replace(new RegExp('%%' + sKey + '%%', 'ig'), sValue);
+            return tmp.replace(new RegExp('{{' + sKey + '}}', 'gi'), sValue);
         };
 
-        function doSearch(that) {
-            var search = $(that.target).val(),
+        function doSearch() {
+            var search = $(this).val(),
                 url = 'http://www.panoramio.com/wapi/data/get_photos?v=1&key=dummykey&tag=' + search + '&callback=?';
 
             $.getJSON(url, function(data) {
@@ -33,6 +34,9 @@
             });
         };
 
-        $('#searchFor').on('change', doSearch).trigger('change');
+        searchBox.on('click', function(){
+            $(this).trigger('select');
+        }).on('change', doSearch).trigger('change');
+
     });
 })(jQuery);
