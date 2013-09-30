@@ -1,17 +1,22 @@
 .images {
   list-style: none;
-  margin: 0; }
+  margin: 0;
+  overflow: hidden; }
+  .images li {
+    display: inline-block; }
+    .images li.search-term {
+      display: block; }
   .images img {
     border-radius: 5%;
-    max-height: 100px;
+    max-height: 300px;
     min-height: 100px;
     margin: 0 0 10px 0;
-    opacity: 0.4;
+    opacity: 1;
     z-index: 1;
     position: relative;
     transform: scale(0.95) translate(0, 0); }
     .images img:hover, .images img:focus {
       transform: scale(1.4) translate(10px, 10px);
       z-index: 2;
-      opacity: 1;
+      opacity: 0.5;
       box-shadow: 0 0 30px rgba(255, 255, 255, 0.9); }

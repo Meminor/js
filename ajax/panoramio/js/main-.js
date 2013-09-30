@@ -1,7 +1,6 @@
 (function($){
     $(function(){
-        var tmpImg = $('#image'),
-            iTabIndex = 2;
+        var tmpImg = $('#image');
 
         function setTmp(tmp, sKey, sValue) {
             return tmp.replace(new RegExp('%%' + sKey + '%%', 'ig'), sValue);
@@ -26,11 +25,10 @@
                             sHTML += setTmp(sTmp, 'src', src);
                             sHTML = setTmp(sHTML, 'ownerUrl', data.photos[1].ownerUrl);
                             sHTML = setTmp(sHTML, 'ownerName', data.photos[i].ownerName);
-                            sHTML = setTmp(sHTML, 'ti', iTabIndex);
                         };
                     };
 
-                    $('.images').prepend('<li class="clear"><h3>Search for "' + search + '"</h3></li>' + sHTML);
+                    $('.images').prepend('<li class="search-term"><h3>Search for "' + search + '"</h3></li>' + sHTML);
                 };
             });
         };
