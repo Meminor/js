@@ -24,7 +24,7 @@
 
                         if (src !== '') {
                             sHTML += setTmp(tmpImg, 'src', src);
-                            sHTML = setTmp(sHTML, 'ownerUrl', data.photos[1].ownerUrl);
+                            sHTML = setTmp(sHTML, 'ownerUrl', data.photos[i].ownerUrl);
                             sHTML = setTmp(sHTML, 'ownerName', data.photos[i].ownerName);
                         };
                     };

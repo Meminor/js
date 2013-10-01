@@ -1,22 +1,16 @@
-.images {
-  list-style: none;
-  margin: 0;
-  overflow: hidden; }
-  .images li {
-    display: inline-block; }
-    .images li.search-term {
-      display: block; }
-  .images img {
+.search-result {
+  position: absolute;
+  background: #eeeeee;
+  padding: 20px; }
+  .search-result .search-item {
     border-radius: 5%;
-    max-height: 300px;
     min-height: 100px;
     margin: 0 0 10px 0;
     opacity: 1;
-    z-index: 1;
-    position: relative;
-    transform: scale(0.95) translate(0, 0); }
-    .images img:hover, .images img:focus {
-      transform: scale(1.4) translate(10px, 10px);
-      z-index: 2;
-      opacity: 0.5;
-      box-shadow: 0 0 30px rgba(255, 255, 255, 0.9); }
+    z-index: 1; }
+    .search-result .search-item img {
+      border-radius: 10px; }
+      .search-result .search-item img:hover, .search-result .search-item img:focus {
+        -webkit-transform: scale(0.98, 0.98);
+        z-index: 2;
+        opacity: 0.8; }

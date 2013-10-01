@@ -7,19 +7,23 @@
 </head>
 <body>
     <div class="search-el">
-        <span class="">Search</span>
-        <input id="search-box" size="16" type="text" placeholder="Denmark" value="tokyo">
+        <span>Search</span>
+        <input id="search-box" size="16" type="text" value="tokyo">
     </div>
     <div class="search-result">
-        <ul class="images"></ul>
+        <script type="text/x-template" id="tpl-img">
+            <div class="search-item">
+                <a href="{{ownerUrl}}" title="See more from {{ownerName}}" target="_blank">
+                    <img src="{{src}}" alt=""/>
+                </a>
+            </div>
+        </script>
     </div>
-
-    <script type="text/template" id="tpl-img">
-        <li class="span2"><a href="{{ownerUrl}}" title="See more from {{ownerName}}" target="_blank"><img src="{{src}}" alt=""/></a></li>
-    </script>
 </div>
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-<script src="js/main-.js"></script>
+<script src="http://underscorejs.org/underscore-min.js"></script>
+<script src="js/main--.js"></script>
+<script src="js/fluid.js"></script>
 </body>
 </html>
 </body>

@@ -1,30 +1,26 @@
-.images {
-    list-style: none;
-    margin: 0;
-    overflow: hidden;
+$bg: #eeeeee;
+$wh: 100px;
 
-    li {
-        display: inline-block;
-
-        &.search-term {
-            display: block;
-        }
-    }
-    img {
+.search-result {
+    position: absolute;
+    background: $bg;
+    padding: 20px;
+    
+    .search-item {
         border-radius: 5%;
-        max-height: 300px;
-        min-height: 100px;
-        margin: 0 0 10px 0;
+        min-height: $wh;
+        margin: 0 0 $wh/10 0;
         opacity: 1;
         z-index: 1;
-        position: relative;
-        transform: scale(0.95) translate(0, 0);
+        
+        img {
+            border-radius: 10px;
 
-        &:hover, &:focus {
-            transform: scale(1.4) translate(10px, 10px);
-            z-index: 2;
-            opacity: 0.5;
-            box-shadow: 0 0 30px rgba(255, 255, 255, 0.9);
+            &:hover, &:focus {
+                -webkit-transform:scale(0.98, 0.98);
+                z-index: 2;
+                opacity: 0.8;
+            }
         }
     }
 }
