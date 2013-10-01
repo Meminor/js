@@ -1,8 +1,9 @@
 (function($){
     $(function(){
-        var $searchItem =$.parseHTML('.search-item');
+        var searchItem = $('#tpl-img').html(),
+            parsed = $.parseHTML(searchItem);
 
-        console.log($searchItem.length);
+        console.log(parsed);
 
         // function setupBlocks() {
         //     var colCount = 0,
@@ -27,6 +28,6 @@
         // positionBlocks();
 
 
-        //http://benholland.me/javascript/how-to-build-a-site-that-works-like-pinterest/
+        // http://benholland.me/javascript/how-to-build-a-site-that-works-like-pinterest/
     });
 })(jQuery);
