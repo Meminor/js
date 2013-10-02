@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Location</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="wrapper">
+    <p>Click on button to find out your location</p>
+    <input id="button" type="button" value="My Location">
+    <div class="result"></div>
+    <script id="place-info" type="text/template">
+        <ul>
+            <li>Country: <span class="country">{{country}}</span></li>
+            <li>Country ID: <span class="country-id">{{country_id}}</span></li>
+            <li>City: <span class="city">{{city}}</span></li>
+            <li>IP: <span class="ip">{{ip}}</span></li>
+        </ul>
+    </script>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="js/main.js"></script>
+</div>
+</body>
+</html>

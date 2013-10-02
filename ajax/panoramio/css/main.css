@@ -34,7 +34,7 @@
     -webkit-transition: all .2s ease; }
     .search-result .search-item img {
       border-radius: 10px;
-      max-width: 300px; }
+      max-width: 200px; }
     .search-result .search-item:hover {
       -webkit-transform: scale(0.98, 0.98);
       z-index: 2;
