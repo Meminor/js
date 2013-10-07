@@ -1,0 +1,50 @@
+$orange: #EA6045;
+$blue: #2F3440;
+$light: #F5E5C0;
+
+.carousel {
+    width: 680px;
+    margin: 10% auto 0;
+    position: relative;
+
+    .content ul {
+        list-style: none;
+
+        li {
+            float: left;
+        }
+    }
+
+    .btn {
+        position: absolute;
+        top: 100px;
+        cursor: pointer;
+
+        &#left {
+            left: 0;
+            border-top: 60px solid transparent;
+            border-bottom: 60px solid transparent;
+            border-right: 20px solid $blue;
+
+            &:hover {
+                border-top: 60px solid transparent;
+                border-bottom: 60px solid transparent;
+                border-right: 20px solid $orange;
+            }
+        }
+
+        &#right {
+            right: 0;
+            border-top: 60px solid transparent;
+            border-bottom: 60px solid transparent;
+            border-left: 20px solid $blue;
+
+            &:hover {
+                border-top: 60px solid transparent;
+                border-bottom: 60px solid transparent;
+                border-left: 20px solid $orange;
+            }
+            
+        }
+    }
+}
