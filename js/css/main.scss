@@ -29,7 +29,7 @@ body {
 
         ul {
             overflow: hidden;
-            width: 610px;
+            width: 800px;
             margin: $m-auto;
             li {
                 float: left;
@@ -57,22 +57,32 @@ body {
     }
 
     .content {
-        width: 610px;
+        width: 715px;
         margin: $m-auto;
         font-size: 18px;
-
+        
+        div {
+            display: inline-block;
+            vertical-align: top;
+            width: 140px;
+            margin-right: 10px;
+        }
         a {
             color: $light;
             text-decoration: none;
 
             &:hover {
                 color: $orange;
+                text-decoration: underline;
             }
         }
         .js, .ajax {
-            display: none;
+            // display: none;
         }
         ul {
+            list-style: square;
+            padding: 0;
+
             li {
                 padding-bottom: 10px;
             }

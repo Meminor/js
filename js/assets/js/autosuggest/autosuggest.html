@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+  <title>
+  </title>
+  <link rel="stylesheet" href="autosuggest.css">
+  </head>
+  <body onLoad="createAutoComplete();">
+    <h1>AutoComplete</h1>
+    <p>Type in a name to view the matching names dropdown.
+    <p>Name are not case sensitive</p>   
+        <div style="text-align:center;">
+          <form autocomplete=off>
+            Name : 
+            <input type="text" id="txt" style="border:#000000 1px solid;width:150px;" autocomplete=off>
+            <div id="suggest" style="visibility:hidden;border:#000000 1px solid;width:150px;">
+            </form>
+          </div>
+    </div>
+    <script type="text/javascript" src="autosuggest.js">
+    </script>
+  </body>
+</html>

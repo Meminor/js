@@ -14,7 +14,7 @@ body {
     text-decoration: none; }
   .wrapper .nav ul {
     overflow: hidden;
-    width: 610px;
+    width: 800px;
     margin: 0 auto; }
     .wrapper .nav ul li {
       float: left;
@@ -32,15 +32,22 @@ body {
       .wrapper .nav ul li:last-child {
         border-right: 1px solid #2f3440; }
 .wrapper .content {
-  width: 610px;
+  width: 715px;
   margin: 0 auto;
   font-size: 18px; }
+  .wrapper .content div {
+    display: inline-block;
+    vertical-align: top;
+    width: 140px;
+    margin-right: 10px; }
   .wrapper .content a {
     color: #f5e5c0;
     text-decoration: none; }
     .wrapper .content a:hover {
-      color: #ea6045; }
-  .wrapper .content .js, .wrapper .content .ajax {
-    display: none; }
-  .wrapper .content ul li {
-    padding-bottom: 10px; }
+      color: #ea6045;
+      text-decoration: underline; }
+  .wrapper .content ul {
+    list-style: square;
+    padding: 0; }
+    .wrapper .content ul li {
+      padding-bottom: 10px; }

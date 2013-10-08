@@ -1,0 +1,129 @@
+/* Script 9.9 - modal.css */
+body {
+  background: #212026;
+  color: #fff;
+}
+
+.content {
+    width: 800px;
+    margin: 100px auto;
+}
+
+/* Modal
+------------------------ */
+
+#modal {
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width:100%;
+    height:100%;
+}
+
+#modalMask {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width:100%;
+    height:100%;
+    background-color: #eee;
+    z-index: 1000;
+    opacity: 0.7;
+    filter:alpha(opacity=90);
+    -moz-opacity: 0.9;
+}
+
+#modalContent {
+    position: relative;
+    width:400px;
+    margin: 200px auto;
+    padding:15px;
+    background-color: #fff;
+    border:1px solid #000;
+    text-align:center;
+    z-index: 9999;
+    color: #000;
+}
+
+/* uiButton
+------------------------ */
+
+.holder {
+  font: 12px;
+  text-align: center;
+  padding: 0 0 0;
+}
+
+#closeModal:link, #closeModal:visited,
+#uiButton:link, #uiButton:visited {
+    position: relative;
+    display: inline-block;
+    width: 15em;
+    height: 3em;
+    border-top: 1px solid #0f0f12;
+    border-radius: 3px;
+    background: #1c1c21;
+    border-radius: 2px;
+    box-shadow: 0 1px 0 rgba(255,255,255,0.05), 0 0 1px rgba(255,255,255,0.1), inset 0 1px 2px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+#closeModal:link:before, #closeModal:visited:before {
+    content: "Close Modal" !important;
+}
+
+
+#closeModal:link:before, #closeModal:visited:before,
+#uiButton:link:before, #uiButton:visited:before {
+    position: absolute;
+    top: 2px;
+    right: 3px;
+    bottom: 3px;
+    left: 3px;
+    padding: .7em 0 0;
+    border-radius: 2px;
+    background: #ed6802;
+    background: -moz-linear-gradient(top, #232329, #16161a);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #232329), color-stop(100%,#16161a));/* Android 2.1~3.0 */
+    background: -webkit-linear-gradient(top, #232329, #16161a);
+    background: -o-linear-gradient(top, #232329, #16161a);
+    background: linear-gradient(to bottom, #232329, #16161a);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.05), inset 0 0 1px rgba(255,255,255,0.1), 0 4px 6px rgba(0,0,0,0.85), 0 1px 2px rgba(0,0,0,0.9);
+    color: #ccc;
+    font-weight: normal;
+    font-family: Tahoma, sans-serif;
+    font-size: 100%;
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.5);
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .06em;
+    line-height: 1.2;
+    content: "Open Modal";
+    z-index: 0;
+}
+
+#closeModal:hover:before,
+#uiButton:hover:before {
+    background: #ed6802;
+    background: -moz-linear-gradient(top, #2b2b33, #1d1d21);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2b2b33), color-stop(100%,#1d1d21));/* Android 2.1~3.0 */
+    background: -webkit-linear-gradient(top, #2b2b33, #1d1d21);
+    background: -o-linear-gradient(top, #2b2b33, #1d1d21);
+    background: linear-gradient(to bottom, #2b2b33, #1d1d21);
+    color: #f5f5f5;
+}
+
+#closeModal:active:before,
+#uiButton:active:before {
+    border-top: 1px solid #030303;
+    background: #ed6802;
+    background: -moz-linear-gradient(top, #101012, #111114);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #101012), color-stop(100%,#111114));/* Android 2.1~3.0 */
+    background: -webkit-linear-gradient(top, #101012, #111114);
+    background: -o-linear-gradient(top, #101012, #111114);
+    background: linear-gradient(to bottom, #101012, #111114);
+    color: #333;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.3), inset 0 0 2px rgba(0,0,0,0.6), 0 1px 0 rgba(50,50,50,0.3);
+}

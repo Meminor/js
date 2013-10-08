@@ -1,0 +1,31 @@
+body {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.contact {
+    padding: 10px;
+    background: #e3e3e3;
+}
+ul {
+    list-style-type: none;
+}
+
+label {
+    display: block;
+}
+
+.js .contact {
+    position: absolute;
+    top: 0;
+    width: inherit;
+    display: none;
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
