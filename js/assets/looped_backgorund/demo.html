@@ -1,0 +1,39 @@
+<html>
+ <head>
+ 
+ <style type="text/css">
+ #header-container {
+	 margin:0 auto;
+	width:900px; 
+	height:200px;
+	position:relative;
+	overflow:hidden;
+	border:solid 1px #ccc;
+}
+ #bg1,
+ #bg2  {
+	background-image:url(images/bg-animated.jpg);
+	background-repeat:no-repeat;
+	width:1800px; 
+	height:200px;
+	position:absolute;
+	z-index:2;
+	left:-900px;
+}
+ </style>
+ 
+
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/bgAnimator.js"></script>
+ 
+ 
+</head>
+ <body>
+ 
+ <div id="header-container">
+   <div id="bg1"></div>
+   <div id="bg2"></div>
+ </div>
+
+ </body>
+</html>
