@@ -6,38 +6,21 @@
 
         imgWrap.prepend(imgClone);
 
-        function arrangeImgs() {
-            $('.bg').each( function(i, item) {
-                var position = $('.scroll').position().left -8 + i * ( $(item).width() );
-                $(item).css('left', position+'px');
-            });
-        }
+       function scrollLeft() {
+            var $scroll = $('.scroll'),
+                $bg = $scroll.find('.bg'),
+                bgWidth = $bg.outerWidth();
 
-        function scrollLeft() {
-            $('.bg').animate({'left' : "-=100px"}, 10000, 'linear', checkEdge());
-        }
-
-        function getPosition() {
-            return $('.bg:last').position().left + $('.bg:last').outerWidth();
+            $scroll.animate({'left' : '-='+ bgWidth +'px'}, 120000, 'linear', checkEdge);
         }
 
         function checkEdge() {
-            var windowsLeftEdge = $('.scroll').position().left;
-            $('.bg').each( function(i, list) {
-                var listRightEdge = $(list).position().left + $(list).width(),
-                    newPosition = getPosition();
+            var $scroll = $('.scroll');
 
-                if ( parseFloat(listRightEdge) < parseFloat(windowsLeftEdge) ) {
-                    $(list).css('left', newPosition);
-                    $(list).remove().appendTo('.scroll');
-                    first = $('.bg:first').attr('class');
-                }
-            });
+            $scroll.css('left', 0);
+            scrollLeft();
         }
 
-        arrangeImgs();
-        setInterval(function(){
-            scrollLeft();
-        }, 100);
+        scrollLeft();
     });
 })(jQuery);
